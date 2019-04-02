@@ -22,11 +22,12 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[left=0.5in,top=0.6in,right=0.5in,bottom=0.6in]{geometry} % Document margins
 
 \name{Alexander Safatli} % Your name
 \address{100 Birch Tree Lane \\ Halifax, NS, Canada B3R2N8} % Your address
-\address{(902)~$\cdot$~222~$\cdot$~2084 \\ alex@safatli.dev} % Your phone number and email
+\address{(902) 222-2084 \\ alex@safatli.dev} % Your phone number and email
+\address{\textsc{GitHub} AlexSafatli \\ \textsc{LinkedIn} asafatli \\ \texttt{https://safatli.dev}} % Github, Linkedin, web
 
 \begin{document}
 
@@ -36,13 +37,12 @@
 
 \begin{rSection}{Education}
 
-{\bf Dalhousie University, Canada} \hfill {\em June 2015} \\ 
-Master of Computer Science (GPA 4.3) \\
-B.S. in Computer Science (Major GPA 4.0) \smallskip \\
-Secretary of Computer Science Graduate Society \\
-Secretary of Computer Science Society \smallskip \\
-Algorithms, Data Structures, NLP, OS, DBs, Software Engineering, \\
-Principles of Programming Languages, Architecture, Cryptography, Discrete
+{\bf Dalhousie University, Canada} \hfill {June 2015} \\ 
+M.S.E. in Computer Science (GPA 4.3) \\
+B.S.E. in Computer Science (In-major GPA 4.0) \smallskip \\
+\textit{Coursework}. Algorithms, Data Structures, NLP, OS, DBs, Software Engineering, \\
+Principles of Programming Languages, Architecture, Cryptography, Discrete Math \textit{et al.} \smallskip \\
+\textit{Extracurricular}. Secretary of Computer Science Graduate Society, Computer Science Society
 
 \end{rSection}
 
@@ -52,8 +52,14 @@ Principles of Programming Languages, Architecture, Cryptography, Discrete
 
 \begin{rSection}{Experience}
 
+\begin{rSubsection}{Liberated Networks}{January 2019 - Present}{Software Developer}{Halifax, NS}
+\item Maintenance of several ASP.NET applications contracted out to national ISPs. C\# and JavaScript.
+\item Exploration of machine learning techniques when applied to resumes and job matching. Python.
+\item Partial ownership of a Java Spring and Angular 7 stack that is used to collaborate on work tasks.
+\end{rSubsection}
+
 \begin{rSubsection}{BeyondTrust}{January 2017 - November 2017}{Software Engineer}{Halifax, NS}
-\item Maintained full stack development of a cyber security software deployment suite packaged with software used by and marketed to Fortune 100 companies. Work was in Javascript (Angular 2 and 3) and Go.
+\item Maintained full stack development of a cyber security software deployment suite packaged with software used by and marketed to Fortune 100 companies. Angular.js and Go.
 \item Managed tooling for software deployment for the team via tools like Jenkins and Docker.  
 \end{rSubsection}
 
@@ -61,7 +67,7 @@ Principles of Programming Languages, Architecture, Cryptography, Discrete
 
 \begin{rSubsection}{Amazon}{January 2016 - October 2016}{Software Development Engineer I}{Seattle, WA}
 \item Touched both frontend and backend components of an established e-commerce platform.
-\item Worked on a team that had a focus on payment methods and gift card redemption. Work was mostly in Java with some work in C++, Perl, and Python.
+\item Worked on a team focusing on payment methods and gift card redemption. Java, C++, Perl, and Python.
 \item Served on-call a number of weeks on a regular monthly basis to monitor and manage large demand web services and platforms.
 \end{rSubsection}
 
@@ -74,12 +80,12 @@ Principles of Programming Languages, Architecture, Cryptography, Discrete
 \begin{rSection}{Technical Skills}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{1ex}} l }
-Computer Languages & C, Go, Python, Java, Ruby, C\#, C++, Obj-C, Lua, Prolog, Haskell, Scheme, R \\
+Computer Languages & C, Go, Python, Java, Typescript, Ruby, C\#, C++, Lua, Prolog, Haskell, Scheme, R \\
 Protocols \& APIs & XML, JSON, REST, IMAP, SMTP, POP3, HTTP, UDP, TCP \\
-Frameworks & Ruby on Rails, JQuery, Angular, ASP.NET, Mason \\ 
+Frameworks & Ruby on Rails, Django, Flask, Angular, ASP.NET, Mason, Tensorflow \\ 
 Databases & MySQL, PostgreSQL, Microsoft SQL, Mongo, Dynamo \\
 Methodologies & Machine Learning (SVMs, Random Forests, DNNs, k-NN), Data Mining \\
-Tools & Git, LaTeX, SVN, Unix (ricing, GNU utilities, etc.), Vim, Emacs
+Tools & Git, SVN, \LaTeX, Unix (ricing, GNU utilities, etc.), \texttt{bash}, \texttt{zsh}, \texttt{vim}, \texttt{emacs}
 \end{tabular}
 
 \end{rSection}
@@ -88,11 +94,16 @@ Tools & Git, LaTeX, SVN, Unix (ricing, GNU utilities, etc.), Vim, Emacs
 %	EXAMPLE SECTION
 %----------------------------------------------------------------------------------------
 
-%\begin{rSection}{Section Name}
+\begin{rSection}{Projects}
 
-%Section content\ldots
+\begin{description}
+\item [Operating System (2014-2015)] UNIX-style x86 system with bare bone essentials. C and Assembly.
+\item [\textit{Pylogeny} (2016)] Framework for combinatorics in phylogeny. Peer-reviewed and published in \textit{PeerJ}. Python.
+\item [ABeRMuSA (2016)] CLI that performs multiple 3D protein structure alignment. Python.
+\item [NootBot (2016-)] Discord bot that automates tasks and emulates a soundboard in $n$ servers. Java Spring.
+\end{description}
 
-%\end{rSection}
+\end{rSection}
 
 %----------------------------------------------------------------------------------------
 

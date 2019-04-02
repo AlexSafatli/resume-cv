@@ -14,7 +14,7 @@
 % notice and this notice are preserved. This file is offered as-is,
 % without any warranty.
 %
-% Created by Trey Hunner and modified by www.LaTeXTemplates.com
+% Created by Trey Hunner and modified by www.LaTeXTemplates.com, Alex Safatli
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -29,13 +29,13 @@
 \pagestyle{empty} % Suppress page numbers
 
 %----------------------------------------------------------------------------------------
-%	HEADINGS COMMANDS: Commands for printing name and address
+%	HEADINGS COMMANDS: Commands for printing name, address, github, linkedin
 %----------------------------------------------------------------------------------------
 
 \def \name#1{\def\@name{#1}} % Defines the \name command to set name
 \def \@name {} % Sets \@name to empty by default
 
-\def \addressSep {$\diamond$} % Set default address separator to a diamond
+\def \addressSep {$\cdot$} % seperator
 
 % One, two or three address lines can be specified 
 \let \@addressone \relax
