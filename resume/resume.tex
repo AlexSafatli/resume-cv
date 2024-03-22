@@ -1,110 +1,41 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Medium Length Professional CV
-% LaTeX Template
-% Version 2.0 (8/5/13)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Trey Hunner (http://www.treyhunner.com/)
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt, a4paper]{awesome-cv}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\setbool{acvSectionColorHighlight}{false}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
+\name{Alexander}{Safatli}
+\position{Software Engineer}
+\address{100 Birch Tree Lane, Halifax, Nova Scotia, Canada}
 
-\documentclass{resume} % Use the custom resume.cls style
-
-\usepackage[left=0.5in,top=0.6in,right=0.5in,bottom=0.6in]{geometry} % Document margins
-
-\name{Alexander Safatli} % Your name
-\address{Herring Cove \\ Halifax, NS, Canada B3R2N8} % Your address
-\address{(902) 222-2084 \\ alex@safatli.com} % Your phone number and email
-\address{\textsc{GitHub} AlexSafatli \\ \textsc{LinkedIn} asafatli \\ \texttt{alex.safatli.com}} % Github, Linkedin, web
+\mobile{(+1) 902-222-2084}
+\email{alex@safatli.com}
+\homepage{alex.safatli.com}
+\github{AlexSafatli}
+\linkedin{asafatli}
+\quote{``Learning is just like sailing against the current; if you don’t advance, you will be driven back."}
 
 \begin{document}
 
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
+% Print the header with above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
 
-\begin{rSection}{Experience}
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Alexander Safatli~~~·~~~Résumé}
+  {\thepage}
 
-\begin{rSubsection}{Liberated Networks}{December 2018 -- September 2019 (part-time 2020 -- 2021)}{Intermediate Software Developer}{Bedford, NS}
-\item Maintenance of several ASP.NET applications contracted out to national ISPs. \textit{C\# and JavaScript}.
-\item Exploration of machine learning techniques when applied to resumes and job matching. \textit{Python}.
-\item Partial ownership of a Kanban-like stack. \textit{Java Spring and Angular 7}.
-\end{rSubsection}
-
-\begin{rSubsection}{BeyondTrust}{January 2017 -- January 2018}{Software Engineer}{Halifax, NS}
-\item Maintained full stack cybersecurity software deployment panel packaged with software marketed to Fortune 100 companies. \textit{Go, Angular, TypeScript}.
-\item Monitored services and managed tooling and devops for the team. \textit{Jenkins, Docker}.  
-\end{rSubsection}
-
-%------------------------------------------------
-
-\begin{rSubsection}{Amazon}{December 2015 -- January 2017}{Software Development Engineer I}{Seattle, WA}
-\item Touched, maintained, and real-time diagnosed many components of the website and microservice architecture underlying it (was on team focused on payment methods). \textit{Java, C++, Perl, Ruby, Go, and Python}.
-\item Served on-call on a regular monthly basis to monitor and manage large demand web services and platforms. Dealt with high-severity issues a number of times that impacted millions of customers.
-\end{rSubsection}
-
-%------------------------------------------------
-
-\begin{rSubsection}{watzan, LLC}{June 2015 -- December 2015}{Software Developer}{Seattle, WA}
-\item Touched, maintained, and real-time diagnosed many components of the website and microservice architecture underlying it (was on team focused on payment methods). \textit{Java, C++, Perl, Ruby, Go, and Python}.
-\item Served on-call on a regular monthly basis to monitor and manage large demand web services and platforms. Dealt with high-severity issues a number of times that impacted millions of customers.
-\end{rSubsection}
-
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Education}
-
-{\bf Dalhousie University, Canada} \hfill {June 2015, September 2019-2024} \\
-PhD in Computer Science (\textit{incomplete}, fulfilled all coursework, partial thesis/seminar requirements) --- 2019-2022 \\
-M.S.E. in Computer Science (GPA 4.3) --- September 2015 \\
-B.S.E. in Computer Science (GPA 4.0, in-major) --- May 2014 \smallskip \\
-\textit{Coursework}. Adv. Algorithms, Algorithms, Data Structures, NLP, Visual Analytics, OS, DBs, Software Engineering, \\
-Principles of Prog. Languages, Architecture, Cryptography, Discrete Math \textit{et al.} \smallskip \\
-\textit{Extracurricular}. Secretary of CS Graduate Society, CS Society
-
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	TECHNICAL STRENGTHS SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Technical Skills}
-
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{1ex}} l }
-Languages & \textit{Experienced}. Go, C, Python, C++, Java/Scala, C\#. \textit{Familiar}. Typescript, Dart, Ruby, Lua, Prolog, Swift. \\
-Frameworks & Angular, ASP.NET, Ruby on Rails, Flask, Vue, React, Flutter, Django, Mason, Tensorflow \\ 
-Databases & MySQL, PostgreSQL, Microsoft SQL, Mongo, Dynamo, Redis \\
-Tools & Git, SVN, Mercurial, Docker, \LaTeX, Unix (ricing, GNU, etc.), AWS, \texttt{bash}, \texttt{zsh}, \texttt{vim}, \texttt{emacs} \\
-\end{tabular}
-
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	EXAMPLE SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Select Projects, Papers \& Awards}
-
-\begin{description}
-\item [\textit{Pylogeny} (2016)] Framework for combinatorics in phylogeny. Peer-reviewed and published in \textit{PeerJ}. \textit{Python}.
-\item [ABeRMuSA (2016)] CLI that performs multiple 3D protein structure alignment. \textit{Python}.
-\item [Undergraduate Student Research Award (NSERC) (2009, 2012, 2013)] Summer research internship placements.
-\end{description}
-
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
+\input{includes/summary.tex}
+\input{includes/experience.tex}
+% \input{resume/presentation.tex}
+% \input{resume/writing.tex}
+% \input{resume/committees.tex}
+\input{includes/education.tex}
+\newpage
+\input{includes/skills.tex}
+\input{includes/certificates.tex}
+\input{includes/honors.tex}
 
 \end{document}
-
