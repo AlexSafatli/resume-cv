@@ -1,0 +1,7 @@
+Intermediate Software Developer
+Dec 2018 - Sep 2019 · 10 mosDec 2018 - Sep 2019 · 10 mos
+Halifax, Nova Scotia, Canada · On-siteHalifax, Nova Scotia, Canada · On-site
+
+Maintenance of several ASP.NET applications contracted out to national ISPs. Ownership of one. Exploration of machine learning techniques when applied to resumes and job matching. Partial ownership of a Kanban-like stack.
+Maintenance of several ASP.NET applications contracted out to national ISPs. Ownership of one. Exploration of machine learning techniques when applied to resumes and job matching. Partial ownership of a Kanban-like stack.
+Skills: C# · Java · Spring Framework · ASP.NET · Python
